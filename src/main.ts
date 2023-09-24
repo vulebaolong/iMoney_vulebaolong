@@ -13,12 +13,12 @@ import "./assets/styles/global.css";
 
 import { registerGlobalComponents } from "./helpers/import";
 
-// const isProduction = process.env.NODE_ENV === "production";
-// if (isProduction) {
-//     console.log = () => {};
-//     console.error = () => {};
-//     console.debug = () => {};
-// }
+const isProduction = process.env.NODE_ENV === "production";
+if (isProduction) {
+    console.log = () => {};
+    console.error = () => {};
+    console.debug = () => {};
+}
 
 const app = createApp(App);
 
