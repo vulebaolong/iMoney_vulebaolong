@@ -1,5 +1,5 @@
 <template>
-    <div v-if="loadingPage" class="fixed z-10 flex items-center justify-center w-screen h-screen bg-white">
+    <div v-if="loadingPage" class="absolute z-10 flex items-center justify-center w-full h-full bg-white/70">
         <LoadingOutlined class="text-4xl text-primary" />
     </div>
 </template>

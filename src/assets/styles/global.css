@@ -1,7 +1,7 @@
 body {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
-    @apply bg-dark-light;
+    @apply  flex items-center justify-center bg-gradient-to-r from-[#ff70b088] to-[#f06ef2a9] ;
 }
 
 .anticon {
