@@ -1,5 +1,5 @@
 <template>
-    <footer class="fixed bottom-0 left-0 w-full pt-4 bg-white md:absolute p-b-safe-4">
+    <footer class="fixed bottom-0 left-0 w-full pt-4 bg-white rounded-none md:absolute p-b-safe-4 md:rounded-b-3xl">
         <div class="container h-full px-8">
             <ul class="flex items-center justify-between h-full">
                 <li v-for="(navItem, index) in navItems" :key="index">
