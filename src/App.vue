@@ -1,5 +1,5 @@
 <template>
-    <div class="relative max-h-[1000px] max-w-xl h-screen w-screen bg-dark-light md:rounded-3xl rounded-none overflow-hidden">
+    <div class="relative w-screen h-screen max-w-xl overflow-hidden rounded-none bg-dark-light md:rounded-3xl">
         <loading />
         <div class="shadow-[rgba(100,100,111,0.3)_0px_2rem_6rem_0px] h-full w-full">
             <component :is="layout">
