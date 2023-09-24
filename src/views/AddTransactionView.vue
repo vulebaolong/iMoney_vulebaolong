@@ -157,8 +157,7 @@
 import { computed, ComputedRef, reactive, ref } from "vue";
 import { useStore } from "vuex";
 import { I_Category_res } from "../interfaces/categoryInterface";
-import * as _dayjs from "dayjs";
-const dayjs = _dayjs;
+import dayjs from "dayjs";
 
 import { RouteLocationRaw } from "vue-router";
 import { lcStorage } from "../helpers/lcStorage";
@@ -177,6 +176,7 @@ export default {
         }
     },
     setup() {
+        console.log(typeof dayjs);
 
         const store = useStore();
 
@@ -196,7 +196,7 @@ export default {
 
         const onFinish = (values: any) => {
             values.total = +values.total;
-            values.createDay = dayjs(values.createDay).format("DD/MM/YYYY");
+            values.createDay = dayjs(values.createDay.value).format("DD/MM/YYYY");
             console.log(values);
             store.dispatch("transactionModule/createTransaction", values);
         };
