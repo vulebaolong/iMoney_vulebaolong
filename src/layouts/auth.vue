@@ -1,6 +1,8 @@
 <template>
     <NavigationBrand />
-    <slot />
+    <div class="pb-24">
+        <slot />
+    </div>
 </template>
 
 <script lang="ts">

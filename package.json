@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
     "ant-design-vue": "^4.0.3",
     "axios": "^1.5.0",
     "dayjs": "^1.11.10",

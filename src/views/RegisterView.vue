@@ -1,6 +1,6 @@
 <template>
     <div class="mt-8">
-        <div class="container">
+        <div class="container ">
             <!-- FROM -->
             <a-form :model="formState" layout="vertical" @finish="onFinish" @finishFailed="onFinishFailed">
                 <!-- NAME -->

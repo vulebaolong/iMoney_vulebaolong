@@ -1,6 +1,6 @@
 const isProduction = process.env.NODE_ENV === "production";
-export const BASE_URL = isProduction ? "https://imonkey.onrender.com/api/v1" : "http://localhost:3001/api/v1";
-// export const BASE_URL = "http://localhost:3001/api/v1";
+// export const BASE_URL = isProduction ? "https://imonkey.onrender.com/api/v1" : "http://localhost:3001/api/v1";
+export const BASE_URL = "http://localhost:3001/api/v1";
 
 export const USER_LOGIN = "USER_LOGIN";
 
