@@ -94,11 +94,18 @@ const transactionActions: TransactionActions = {
     async createTransaction({}, transaction) {
         try {
             const { data } = await transactionApi.createTransaction(transaction);
+
             console.log(data);
+
             success("Create transaction success");
+
+            return true;
         } catch (err) {
             console.log(err);
+            
             error("Create transaction faild");
+
+            return false;
         }
     },
 

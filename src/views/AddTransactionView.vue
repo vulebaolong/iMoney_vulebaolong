@@ -194,11 +194,22 @@ export default {
             withPerson: "",
         });
 
+        const resetForm = () => {
+            formState.total = 0;
+            formState.category_Id = "";
+            formState.note = "";
+            formState.createDay = "";
+            formState.location = "";
+            formState.withPerson = "";
+        };
+
         const onFinish = (values: any) => {
             values.total = +values.total;
             values.createDay = dayjs(values.createDay.value).format("DD/MM/YYYY");
             console.log(values);
-            store.dispatch("transactionModule/createTransaction", values);
+            store.dispatch("transactionModule/createTransaction", values).then((result) => {
+                if (result) resetForm();
+            });
         };
 
         const onFinishFailed = (errorInfo: any) => {
